@@ -24,10 +24,7 @@ Las relaciones N:M STOCK, DESTINO y DESEMPEÑA se representan como tablas. Las r
 - `importe_total` se almacena como importe no negativo porque el modelo original no contiene líneas de pedido ni precios para calcularlo. Si se exige que sea derivado, habría que ampliar el modelo.
 - `fecha_ingreso_plus` puede ser NULL para clientes no adheridos.
 - Se impide eliminar productos, empleados y clientes con ciertas referencias activas; al eliminar una zona se eliminan sus relaciones de stock y destino.
-- El modelo de la práctica 2 no contiene mantenimiento. Si la modificación posterior sobre tareas de mantenimiento forma parte del enunciado definitivo, se debe añadir una tabla MANTENIMIENTO y actualizar ambos diagramas.
 
 ## Comprobación
-El script termina con SELECT de las diez tablas. Guardar capturas de sus resultados en `capturas/`. Las operaciones DELETE de ejemplo se ejecutan dentro de una transacción revertida con ROLLBACK, de modo que no se pierde el mínimo de cinco filas por tabla.
+El script termina con SELECT de las diez tablas. Guardar capturas de sus resultados en Tablas con sus select. Las operaciones DELETE de ejemplo se ejecutan dentro de una transacción revertida con ROLLBACK, de modo que no se pierde el mínimo de cinco filas por tabla.
 
-## Entrega
-Subir todos los archivos al repositorio de GitHub y entregar el enlace. Si el repositorio es privado, invitar a cexposit@ull.edu.es.
